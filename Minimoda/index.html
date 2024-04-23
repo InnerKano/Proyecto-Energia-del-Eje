@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>MINIMODA</title>
+        <link href="images/icon/Mono_vector_png.png" rel="icon" type="image/x-icon" sizes="32x32"/>
+        <link href="images/icon/Mono_vector_png.png" rel="icon" type="image/png" sizes="16x16"/>
+        <link href="css\Styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script type="application/javascript"  languaje="JavaScript" src="ScriptsJS/script.js"></script>
+    </head>
+
+    <body>
+        <div id="grid" class="ContenedorGrid">
+        
+            <header id="Encabezado" >
+                <h1><a href="index.html">MINIMODA</a></h1>     
+            </header>
+              
+            <nav id="menu_1" class="">
+                <ul id="menu_principal" class="FlexboxNav1">
+                    <li><a href="#" id="opc1" class="Nav1">NOSOTROS</a></li>
+                    <li><a href="Categorias/USUARIO.html" id="opc7" class="Nav1">USUARIO </a>
+                        <ul id="menu_desplegable" class="FlexboxNav1_1">
+                            <li><a href="Subcategorias/Puntos.html" id="opc7.1" class="Nav1_1">Puntos</a></li>
+                            <li><a href="Subcategorias/Compras.html" id="opc7.2" class="Nav1_1">Compras</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="Categorias/CATÁLOGO.html" id="opc2" class="Nav1">CATÁLOGO </a>
+                        <ul id="menu_desplegable" class="FlexboxNav1_1">
+                            <li><a href="Subcategorias\Accesorios.html" id="opc4" class="Nav1_1">Accesorios</a></li>
+                            <li><a href="Subcategorias\Ropa.html" id="opc5" class="Nav1_1">Ropa</a></li>
+                            <li><a href="Subcategorias\Zapatos.html" id="opc6" class="Nav1_1">Zapatos</a></li>
+                        </ul>
+                     </li>
+                    <li><a href="Categorias/CONTÁCTANOS.html" id="opc3" class="Nav1">CONTÁCTANOS</a></li> 
+                </ul>      
+            </nav>
+
+            <main id="Bloque_principal" >
+            
+                    <section id="Seccion_1" >
+                        <h2>SOBRE NOSOTROS</h2>
+                        
+                        <article id="Artículo_1" >
+                            
+                            <p id="P1">¡Bienvenidos a Mini Moda, la boutique de lujo para tus pequeños amigos!
+                                Nos especializamos en ropa y accesorios femeninos en miniatura, diseñados
+                                específicamente para animales pequeños. Nuestra colección incluye todo, desde 
+                                vestidos elegantes y sombreros con plumas hasta collares brillantes y lazos adorables. 
+                                Cada pieza está hecha a mano con los materiales más finos, garantizando no solo estilo, 
+                                sino también comodidad para tu mascota. En Mini Moda, creemos que cada mascota merece
+                                sentirse fabulosa. ¡Viste a tu pequeño amigo con estilo hoy!
+                        
+                        </article>
+
+                        
+                    </section>
+
+                
+                    <div class="carousel-container">
+                        <div class="carousel-slide fade">
+                        <img src="images/promociones/1.png" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-slide fade">
+                        <img src="images/promociones/3.png" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-slide fade">
+                        <img src="images/promociones/2.png" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-slide fade">
+                            <img src="images/promociones/4.png" alt="Imagen 4">
+                            </div>
+                            
+                    </div>
+
+                                                    
+            <aside>
+
+                <section id="Seccion_2" >
+                    
+                    
+                    <article id="Artículo_2" >
+                        
+                        <p id="P2">En esta sección, podrás ver cómo lucen nuestros productos en diferentes
+                             tipos de animales pequeños, como conejos, hamsters, cobayas, hurones y más. 
+                             Nuestros productos son ropa miniatura de alta calidad, diseñada para adaptarse 
+                             al tamaño y la forma de cada animal, y para brindarles comodidad y estilo. 
+                             Podrás ver desde vestidos, trajes, sombreros, gorros, bufandas, hasta disfraces 
+                             de Halloween, Navidad y otras ocasiones especiales.
+                    
+                    </article>
+                </section>
+            </aside>
+
+            <div class="image-gallery">
+                <div class="image-card" onclick="zoomImage(this)">
+                    <img src="images/modelos/conejo 1.jpg" alt="Imagen 1">
+                </div>
+                <div class="image-card" onclick="zoomImage(this)">
+                    <img src="images/modelos/hamster 1.jpg" alt="Imagen 2">
+                </div>
+                <div class="image-card" onclick="zoomImage(this)">
+                    <img src="images/modelos/rana 2.jpg" alt="Imagen 3">
+                </div>
+                <div class="image-card" onclick="zoomImage(this)">
+                    <img src="images/modelos/hamster 3.jpg" alt="Imagen 4">
+                </div>
+                
+                
+        
+                <div id="overlay" onclick="closeZoom()"></div>
+                <div id="zoom-container">
+                    <img id="zoomed-image">
+                </div>
+            </div>
+
+             
+            </main>
+
+ 
+                  
+            
+            <footer id="Pie_de_página">
+                <h5>Esta página web, "Minimoda", ha sido creada con fines educativos y su contenido no debe interpretarse como una indicación de acciones específicas a seguir. </h5>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    
+                  </div>
+                    <small>&COPY; Derechos Reservados 2024</small>
+            </footer>
+    
+         </div>
+
+    </body>
+
+    
+
+</html>
