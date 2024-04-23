@@ -8,11 +8,19 @@
         
 }
 
+:root{
+    --color-primario: blue;
+    --color-secundario: #0068FA;
+    --color-neutro-claro: #C7DEFF;
+    --color-neutro-oscuro: #0D0D0D;
+}
+
 
 body {
 
     margin: 0%;
-    background-color: lightgoldenrodyellow  
+    background-color: lightgoldenrodyellow 
+    
 }
 
 
