@@ -9,40 +9,52 @@
         <meta name="keywords" content=""/>
         <meta name="description" content=""/>
         <meta name="author" content=""/>
-        <title>MINIMODA</title>
-        <link href="images/icon/Mono_vector_png.png" rel="icon" type="image/x-icon" sizes="32x32"/>
-        <link href="images/icon/Mono_vector_png.png" rel="icon" type="image/png" sizes="16x16"/>
+        <title>Energia del Eje</title>
+        <link href="../EnergiaDelEje/images/icon/Logo.png" rel="icon" type="image/x-icon" sizes="32x32"/>
+        <link href="../EnergiaDelEje/images/icon/Logo.png" rel="icon" type="image/png" sizes="16x16"/>
         <link href="css\Styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="../EnergiaDelEje/images/icon/Logo.png">
         <script type="application/javascript"  languaje="JavaScript" src="ScriptsJS/script.js"></script>
+   
+   
+        <!-- LINK barra search -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
 
-    <body>
+    <body style="margin: 0;">
         <div id="grid" class="ContenedorGrid">
-        
-            <header id="Encabezado" >
-                <h1><a href="index.html">MINIMODA</a></h1>     
-            </header>
-              
-            <nav id="menu_1" class="">
-                <ul id="menu_principal" class="FlexboxNav1">
-                    <li><a href="#" id="opc1" class="Nav1">NOSOTROS</a></li>
-                    <li><a href="Categorias/USUARIO.html" id="opc7" class="Nav1">USUARIO </a>
-                        <ul id="menu_desplegable" class="FlexboxNav1_1">
-                            <li><a href="Subcategorias/Puntos.html" id="opc7.1" class="Nav1_1">Puntos</a></li>
-                            <li><a href="Subcategorias/Compras.html" id="opc7.2" class="Nav1_1">Compras</a></li>
-                        </ul>
-                    </li>
-                     <li><a href="Categorias/CATÁLOGO.html" id="opc2" class="Nav1">CATÁLOGO </a>
-                        <ul id="menu_desplegable" class="FlexboxNav1_1">
-                            <li><a href="Subcategorias\Accesorios.html" id="opc4" class="Nav1_1">Accesorios</a></li>
-                            <li><a href="Subcategorias\Ropa.html" id="opc5" class="Nav1_1">Ropa</a></li>
-                            <li><a href="Subcategorias\Zapatos.html" id="opc6" class="Nav1_1">Zapatos</a></li>
-                        </ul>
-                     </li>
-                    <li><a href="Categorias/CONTÁCTANOS.html" id="opc3" class="Nav1">CONTÁCTANOS</a></li> 
-                </ul>      
+           <!-- Encabezado -->
+           <header class="header">
+            <!-- Navegación -->
+            <nav class="nav-container">
+                <!-- Logo y nombre -->
+                <div class="logo-container">
+                    <div class="logo"></div>
+                    <span class="logo-text">Energía del Eje</span>
+                </div>
+                <!-- Enlaces de navegación -->
+                <div class="nav-links">
+                    <a href="#" class="nav-link hover:text-zinc-300">Desde 2020</a>
+                    <a href="#" class="nav-link hover:text-zinc-300">Energía</a>
+                    <a href="#" class="nav-link hover:text-zinc-300">Servicios</a>
+                    <a href="#" class="nav-link hover:text-zinc-300">Explora</a>
+                    <a href="#" class="nav-link hover:text-zinc-300">Contáctanos</a>
+                </div>
             </nav>
+            <!-- Contenido principal -->
+            <div class="header-bg" style="background-image: url('images/Header_img.jpg');">
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <form action="">
+                    <input type="search" required>
+                    <i class="fa fa-search"></i>
+                    <a href="ScriptsJS/bar_Search.js" id="clear-btn">Clear</a>
+                </form>
+            </div>
+
+                
+            </div>
+        </header>
 
             <main id="Bloque_principal" >
             
@@ -146,3 +158,155 @@
     
 
 </html>
+
+<!-- header y nav styles  -->
+<style>
+    /* Estilos CSS */
+    /* Estilos para la navegación */
+    .nav-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
+    .logo {
+        background-image: url('../EnergiaDelEje/images/icon/Logo.png');
+        background-size: contain;
+        border-radius: 100%; /* Hace que el contenedor sea redondo */
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-text {
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    /* Estilos para los enlaces de navegación */
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-link {
+        color: inherit;
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+
+    .nav-link:hover {
+        color: #6d7a94; /* Cambiar al color deseado */
+    }
+    .header {
+        position: relative;
+    }
+
+    .header-bg {
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<style id="search">
+
+    /* Estilos para el search */
+    .search-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .search-bar form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 1s;
+        width: 50px;
+        height: 50px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+    }
+
+    .search-bar input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    .search-bar .fa {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;
+    }
+
+    .search-bar form:hover,
+    .search-bar form:valid {
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .search-bar form:hover input,
+    .search-bar form:valid input {
+        display: block;
+    }
+
+    .search-bar form:hover .fa,
+    .search-bar form:valid .fa {
+        background: #07051a;
+        color: white;
+    }
+
+    /* Estilos específicos para el enlace dentro de la barra de búsqueda */
+    .search-bar a {
+        display: none;
+        position: absolute;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+        color: white;
+        text-align: center; 
+        width: 100%;
+    }
+
+    .search-bar form:valid a {
+        display: block;
+    }
+
+</style>
