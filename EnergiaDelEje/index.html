@@ -76,15 +76,15 @@
                         <h2>Nuestro Catalogo</h2>
                         <div class="Container-op">
                             <div class="op">
-                                <div class="op-catalogo"><img src="" alt="logo"></div>
+                                <div class="op-catalogo"><img src="images/sol.svg" class= "logo-op" alt="logo"></div>
                                 <h3>Solar</h3>
                             </div>
                             <div class="op">
-                                <div class="op-catalogo"><img src="" alt="logo"></div>
+                                <div class="op-catalogo"><img src="images/herramineta.svg" class= "logo-op" alt="logo"></div>
                                 <h3>Componentes</h3>
                             </div>
                             <div class="op">
-                                <div class="op-catalogo"><img src="" alt="logo"></div>
+                                <div class="op-catalogo"><img src="images/bateria.svg" class= "logo-op" alt="logo"></div>
                                 <h3>Accesorios</h3>
                             </div>
                         </div>
@@ -137,10 +137,10 @@
                                 <div class="promo-item promo-1"></div>
                                 <div class="promo-item promo-2"></div>
                             </div>
-                            <div class="promo-items-2">
-                                <div class="promo-item promo-3"></div>
-                                <div class="promo-item promo-4"></div>
-                            </div> 
+                            <div class="promo-items-1">
+                                <div class="promo-item promo-1"></div>
+                                <div class="promo-item promo-2"></div>
+                            </div>
                         </div>
 
                     </section>
@@ -160,7 +160,7 @@
                   
             
             <footer id="Pie_de_página">
-                <h5>Esta página web, "Minimoda", ha sido creada con fines educativos y su contenido no debe interpretarse como una indicación de acciones específicas a seguir. </h5>
+                <h5>Esta página web, "Energía del eje", ha sido creada con fines educativos y su contenido no debe interpretarse como una indicación de acciones específicas a seguir. </h5>
                 <div class="social-icons">
                     <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -362,6 +362,7 @@
     #Bloque_principal {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        background-color: #C7DEFF;
         
     }
 
@@ -464,6 +465,12 @@
         align-self: start;
     }
 
+    .logo-op{
+        width: 100px;
+        height: 100px;
+        
+    }
+
     .Product-item-r {
         display: flex;
         flex-direction: column;
@@ -513,7 +520,7 @@
         grid-template-columns: 1fr 1fr;
         place-content: left;
         place-items: normal;
-        height: 300px;
+        height: 240px;
         gap: 1rem;
         margin-left: 300px;
     }
@@ -521,10 +528,13 @@
     .promo-items-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        place-content: center;
-        place-items: center;
+        place-content: left;
+        place-items: normal;
+        justify-items: end;
         width: 100%;
         height: 300px;
+        gap: 1rem;
+        margin-left: 11px;
     }
 
     .promo-item {
@@ -559,6 +569,18 @@
         background-size: contain;
         width: 528px;
         height: 303px;
+    }
+
+
+    #Pie_de_página {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: #002861;
+        margin-top: 0%;
+        color: white;
     }
 </style>
 
