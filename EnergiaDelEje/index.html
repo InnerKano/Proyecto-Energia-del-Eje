@@ -93,7 +93,42 @@
                                 <p>$10.000</p>
                                 <button class="button-Recomendado">Ver</button>
                             </div>
+                            <div class="Product-item-r">
+                                <img src="" alt="Producto">
+                                <button class="btn-like" onclick="this.classList.toggle('liked');">
+                                    <span class="heart-icon">&hearts;</span>
+                                </button>
+                                <h4>Nombre del producto</h4>
+                                <p>descripcion del producto</p>
+                                <p>$10.000</p>
+                                <button class="button-Recomendado">Ver</button>
+                            </div>
+                            <div class="Product-item-r">
+                                <img src="" alt="Producto">
+                                <button class="btn-like" onclick="this.classList.toggle('liked');">
+                                    <span class="heart-icon">&hearts;</span>
+                                </button>
+                                <h4>Nombre del producto</h4>
+                                <p>descripcion del producto</p>
+                                <p>$10.000</p>
+                                <button class="button-Recomendado">Ver</button>
+                            </div>
                         </div>
+                    </section>
+
+                    <section id="seccion_3">
+                        <h3>Promociones</h3>
+                        <div class="container-promo">
+                            <div class="promo-items-1">
+                                <div class="promo-item promo-1"></div>
+                                <div class="promo-item promo-2"></div>
+                            </div>
+                            <div class="promo-items-2">
+                                <div class="promo-item promo-3"></div>
+                                <div class="promo-item promo-4"></div>
+                            </div> 
+                        </div>
+
                     </section>
                 
                 
@@ -295,7 +330,7 @@
         width: 100%;
         grid-column: 1 / 3;
         place-items: center;
-        background-color: #C7DEFF;;
+        background-color: #C7DEFF;
     }
 
     #Seccion_1 h2 {
@@ -372,8 +407,12 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-weight: lighter;
         color: white;
+        align-self: start;
     }
 
+    .title-seccion-2 {
+        align-self: start;
+    }
     .container-product-r {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -381,6 +420,7 @@
         place-items: center;
         width: 100%;
         height: 300px;
+        align-self: start;
     }
 
     .Product-item-r {
@@ -394,5 +434,90 @@
         background-color: thistle;
     }
 
+
+    
+    #seccion_3 {
+        display: grid;
+        width: 100%;
+        height: 680px;
+        grid-column: 1 / 3;
+        place-items: center;
+        background-color: #C7DEFF;
+        margin-top: 0%;
+    }
+
+    #seccion_3 h3 {
+        font-size: 2rem;
+        text-align: top;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration:underline;
+        font-weight: lighter;
+        color: #012d6a;
+        align-self: start;
+        
+    }
+
+    .container-promo {
+        display: grid;
+        grid-column: repeat(2, 1fr);
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        height: 300px;
+        align-self: start;
+    }
+
+    .promo-items-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: left;
+        place-items: normal;
+        height: 300px;
+        gap: 1rem;
+        margin-left: 300px;
+    }
+
+    .promo-items-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .promo-item {
+        width: 200px;
+        height: 200px;
+        background-color: #003E94;
+    }
+
+    .promo-1 {
+        background-image: url('../EnergiaDelEje/images/icon/Logo.png');
+        background-size: contain;
+        width: 528px;
+        height: 224px;
+    }
+
+    .promo-2 {
+        background-image: url('../EnergiaDelEje/images/icon/Logo.png');
+        background-size: contain;
+        width: 241px;
+        height: 224px;
+    }
+
+    .promo-3 {
+        background-image: url('../EnergiaDelEje/images/icon/Logo.png');
+        background-size: contain;
+        width: 241px;
+        height: 303px;
+    }
+
+    .promo-4 {
+        background-image: url('../EnergiaDelEje/images/icon/Logo.png');
+        background-size: contain;
+        width: 528px;
+        height: 303px;
+    }
 </style>
 
