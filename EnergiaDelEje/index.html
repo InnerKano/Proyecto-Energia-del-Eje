@@ -16,8 +16,11 @@
         <link rel="stylesheet" href="../EnergiaDelEje/images/icon/Logo.png">
         <script type="application/javascript"  languaje="JavaScript" src="ScriptsJS/script.js"></script>
    
-   
-        <!-- LINK barra search -->
+        <!-- LINK google Corazon icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />        <!-- LINK barra search -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
 
@@ -39,6 +42,10 @@
                     <a href="#" class="nav-link hover:text-zinc-300">Servicios</a>
                     <a href="#" class="nav-link hover:text-zinc-300">Explora</a>
                     <a href="#" class="nav-link hover:text-zinc-300">Contáctanos</a>
+                    <div class="icons">
+                        <i class="fas fa-heart"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
                 </div>
             </nav>
             <!-- Contenido principal -->
@@ -180,14 +187,33 @@
     }
     .header {
         position: relative;
+        
     }
 
     .header-bg {
         width: 100%;
-        height: 700px;
+        height: 500px;
         background-size: cover;
         background-position: center;
     }
+
+    /* styles all icons */
+    .fas, .fab {
+        margin-right: 24px;
+
+        /* font size increases the size */
+        font-size: 24px;
+    }
+
+    /* styles the facebook and heart icon on mouse hover */
+    .fa-heart:hover {
+        color: red;
+    }
+    .fa-facebook-f:hover{
+        color: blue;
+    }
+
+
 </style>
 
 <style id="search">
@@ -212,6 +238,7 @@
         border-radius: 25px;
         border: 4px solid white;
         padding: 5px;
+        margin: 5px;
     }
 
     .search-bar input {
@@ -277,6 +304,10 @@
 
     .search-bar form:valid a {
         display: block;
+    }
+
+        .search-bar form:hover a {
+        color: red
     }
 
 </style>
